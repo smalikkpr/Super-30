@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helping Material | Super-30</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- The shared website style (header, menu, footer) -->
+  <link rel="stylesheet" href="site.css">
+
+  <!-- ===================== CSS for this page ===================== -->
+  <style>
+    :root {
+      --green: #0f4d3a;
+      --green-soft: #e7efe9;
+      --gold: #d9a441;
+      --cream: #faf6ee;
+      --text: #1f2a26;
+      --muted: #5b6b64;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Inter", Arial, sans-serif; background: var(--cream); color: var(--text); line-height: 1.6; }
+    h1, h2 { font-family: "Fraunces", Georgia, serif; color: var(--green); line-height: 1.25; }
+
+
+    .box {
+      max-width: 760px; margin: 40px auto; background: #fff;
+      padding: 34px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,.06);
+    }
+    .hidden { display: none !important; }
+    .tag { color: #a8761c; font-weight: 600; font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; }
+    .intro { color: var(--muted); margin: 8px 0 26px; }
+
+    /* Class buttons (the drop-down headers) */
+    .class-btn {
+      display: flex; justify-content: space-between; align-items: center; width: 100%;
+      padding: 20px 22px; margin-top: 14px; font-family: "Fraunces", serif; font-size: 1.35rem; font-weight: 700;
+      color: #fff; background: var(--green); border: none; border-radius: 10px; cursor: pointer; text-align: left;
+    }
+    .class-btn:hover { background: #136047; }
+    .class-btn .arrow { color: var(--gold); font-size: 1rem; transition: transform .2s; }
+    .class-btn.open .arrow { transform: rotate(180deg); }
+
+    /* Subject list inside the drop-down */
+    .subjects {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;
+      padding: 16px; background: var(--green-soft); border-radius: 0 0 10px 10px; margin-top: -6px;
+    }
+    .subject-btn {
+      padding: 14px 16px; font-size: 1rem; font-weight: 600; font-family: inherit; color: var(--green);
+      background: #fff; border: 2px solid transparent; border-radius: 8px; cursor: pointer; text-align: left;
+    }
+    .subject-btn:hover { border-color: var(--gold); }
+
+    /* Back link */
+    .back-btn {
+      background: none; border: none; color: var(--muted); font-family: inherit; font-size: .95rem;
+      cursor: pointer; text-decoration: underline; margin-bottom: 18px;
+    }
+    .back-btn:hover { color: var(--green); }
+
+    /* Chapter list */
+    .chapters { list-style: none; margin-top: 22px; display: grid; gap: 10px; }
+    .chapter {
+      display: flex; gap: 14px; align-items: center; width: 100%;
+      padding: 14px 16px; background: var(--cream); border: 2px solid transparent; border-radius: 8px;
+      font-family: inherit; font-size: 1rem; color: var(--text); text-align: left; cursor: pointer; text-decoration: none;
+    }
+    .chapter:hover { border-color: var(--gold); }
+    .chapter .num {
+      flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%;
+      background: var(--green); color: var(--gold); font-weight: 700;
+      display: flex; align-items: center; justify-content: center; font-size: .9rem;
+    }
+    .chapter .title { flex: 1; font-weight: 600; }
+    .chapter .author { display: block; font-weight: 400; color: var(--muted); font-size: .9rem; }
+    .badge { font-size: .8rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
+    .badge.ready { background: var(--gold); color: #0a3528; }
+    .badge.soon { background: #ece6d9; color: var(--muted); }
+
+    /* Message box */
+    .message {
+      margin-top: 22px; padding: 26px; background: #fbf1dc; border-radius: 10px;
+      font-size: 1.1rem; line-height: 1.8;
+    }
+
+    @media (max-width: 600px) {
+      .box { margin: 20px 12px; padding: 22px; }
+      .subjects { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===================== HEADER (the same on every page) ===================== -->
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="logo.svg" alt="Super-30 logo">
+        Super<span>-30</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tests.html" class="active">Helping Material</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html" class="menu-cta">Register Yourself</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===================== SCREEN 1: CLASSES AND SUBJECTS ===================== -->
+  <div class="box" id="classScreen">
+    <p class="tag">Helping Material</p>
+    <h1>Free Online Tests</h1>
+    <p class="intro">Select the class and then the subject to go for online tests.</p>
+
+    <!-- The class buttons and subject lists are made by JavaScript, from the data below -->
+    <div id="classList"></div>
+  </div>
+
+  <!-- ===================== SCREEN 2: CHAPTERS OR MESSAGE ===================== -->
+  <div class="box hidden" id="subjectScreen">
+    <button class="back-btn" id="backBtn">← Back to classes</button>
+    <p class="tag" id="subjectClass">Class 11</p>
+    <h1 id="subjectName">English-I</h1>
+
+    <ul class="chapters" id="chapterList"></ul>
+    <p class="message hidden" id="comingSoon"></p>
+  </div>
+
+  <!-- ===================== JAVASCRIPT (the actions) ===================== -->
+  <script>
+    // 1. THE MESSAGE FOR SUBJECTS THAT ARE NOT READY YET
+    const notReadyMessage = "Tests on this subject are underway. As soon as they are ready, you will be informed about this. Stay connected till then. Thank you.";
+
+    // 2. THE DATA: classes, their subjects, and chapters
+    // A chapter with "file" has a ready test. Without "file", it shows "Coming soon".
+    // A subject without "chapters" shows the message above.
+    const classes = [
+      {
+        name: "Class 11 (1st Year)",
+        subjects: [
+          {
+            name: "English-I",
+            chapters: [
+              { title: "Khatam-un-Nabiyeen Hazrat Muhammad (ﷺ)", file: "unit1-test.html" },
+              { title: "Responsibility of the Youth in Nation-Building", author: "Quaid-e-Azam" },
+              { title: "A Bird Came Down the Walk (Poem)", author: "Emily Dickinson" },
+              { title: "Team Moon", author: "Catherine Thimmesh" },
+              { title: "Impact of Global Warming on Pakistan" },
+              { title: "The Echoing Green (Poem)", author: "William Blake" },
+              { title: "What You Do is What You Are", author: "Nickie McWhirter" },
+              { title: "Clean Water" },
+              { title: "Freedom (Poem)", author: "Langston Hughes" },
+              { title: "The Punishment of Shahpesh, the Persian, on Khipil, the Builder", author: "George Meredith" },
+              { title: "Those Winter Sundays (Poem)", author: "Robert Hayden" },
+              { title: "The Impact of AI on Society, Human Relationships, and Ethics" },
+              { title: "Ruba'iyat (Poem)", author: "Allama Muhammad Iqbal" },
+              { title: "The End of the Beginning (Play)", author: "Sean O'Casey" }
+            ]
+          },
+          { name: "Urdu-I" },
+          { name: "Islamiat-I" },
+          { name: "Economics-I" },
+          { name: "Computer Science-I" },
+          { name: "Physics-I" },
+          { name: "Chemistry-I" },
+          { name: "Biology-I" },
+          { name: "Mathematics-I" },
+          { name: "Tarjamat ul Quran-I" }
+        ]
+      },
+      {
+        name: "Class 12 (2nd Year)",
+        subjects: [
+          {
+            name: "English-II",
+            chapters: [
+              { title: "Journey to Taif", author: "Sayyid Abul Hasan Ali Nadwi" },
+              { title: "The Last Lesson", author: "Alphonse Daudet" },
+              { title: "On His Blindness (Poem)", author: "John Milton" },
+              { title: "The Power of Digital Learning" },
+              { title: "The Giving Tree", author: "Shel Silverstein" },
+              { title: "The Fun They Had", author: "Isaac Asimov" },
+              { title: "Because I Could Not Stop for Death (Poem)", author: "Emily Dickinson" },
+              { title: "The Devoted Friend", author: "Oscar Wilde" },
+              { title: "The Doll's House", author: "Katherine Mansfield" },
+              { title: "All the World's a Stage (Poem)", author: "William Shakespeare" },
+              { title: "A Letter to God", author: "Gregorio López y Fuentes" },
+              { title: "A Visit to the Swat Valley", author: "H. P. Stewart" }
+            ]
+          },
+          { name: "Urdu-II" },
+          { name: "Islamiat-II" },
+          { name: "Economics-II" },
+          { name: "Computer Science-II" },
+          { name: "Physics-II" },
+          { name: "Chemistry-II" },
+          { name: "Biology-II" },
+          { name: "Mathematics-II" },
+          { name: "Tarjamat ul Quran-II" }
+        ]
+      }
+    ];
+
+    // 3. FIND THE PARTS OF THE PAGE
+    const classScreen = document.getElementById("classScreen");
+    const subjectScreen = document.getElementById("subjectScreen");
+    const classList = document.getElementById("classList");
+    const chapterList = document.getElementById("chapterList");
+    const comingSoon = document.getElementById("comingSoon");
+
+    // 4. MAKE THE CLASS BUTTONS, EACH WITH ITS HIDDEN SUBJECT LIST
+    classes.forEach(function (cls) {
+      // The class button
+      const classBtn = document.createElement("button");
+      classBtn.className = "class-btn";
+      classBtn.innerHTML = cls.name + ' <span class="arrow">▼</span>';
+      classList.appendChild(classBtn);
+
+      // The subject list (hidden at first)
+      const subjectBox = document.createElement("div");
+      subjectBox.className = "subjects hidden";
+      classList.appendChild(subjectBox);
+
+      cls.subjects.forEach(function (subject, i) {
+        const subjectBtn = document.createElement("button");
+        subjectBtn.className = "subject-btn";
+        subjectBtn.textContent = (i + 1) + ". " + subject.name;
+        subjectBtn.addEventListener("click", function () {
+          openSubject(cls, subject);
+        });
+        subjectBox.appendChild(subjectBtn);
+      });
+
+      // Click the class button: open or close its list
+      classBtn.addEventListener("click", function () {
+        subjectBox.classList.toggle("hidden");
+        classBtn.classList.toggle("open");
+      });
+    });
+
+    // 5. OPEN A SUBJECT: show its chapters, or the "not ready" message
+    function openSubject(cls, subject) {
+      document.getElementById("subjectClass").textContent = cls.name;
+      document.getElementById("subjectName").textContent = subject.name;
+      chapterList.innerHTML = "";
+
+      if (subject.chapters) {
+        comingSoon.classList.add("hidden");
+        chapterList.classList.remove("hidden");
+
+        subject.chapters.forEach(function (ch, i) {
+          const li = document.createElement("li");
+          // A ready test is a link. A chapter without a test is a button.
+          const item = document.createElement(ch.file ? "a" : "button");
+          item.className = "chapter";
+          if (ch.file) item.href = ch.file;
+
+          const author = ch.author ? '<span class="author">' + ch.author + "</span>" : "";
+          const badge = ch.file
+            ? '<span class="badge ready">Start Test →</span>'
+            : '<span class="badge soon">Coming soon</span>';
+          item.innerHTML = '<span class="num">' + (i + 1) + "</span>" +
+                           '<span class="title">' + ch.title + author + "</span>" + badge;
+
+          if (!ch.file) {
+            item.addEventListener("click", function () {
+              comingSoon.textContent = "The test on “" + ch.title + "” is underway. As soon as it is ready, you will be informed. Stay connected till then. Thank you.";
+              comingSoon.classList.remove("hidden");
+              comingSoon.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            });
+          }
+
+          li.appendChild(item);
+          chapterList.appendChild(li);
+        });
+      } else {
+        chapterList.classList.add("hidden");
+        comingSoon.textContent = notReadyMessage;
+        comingSoon.classList.remove("hidden");
+      }
+
+      classScreen.classList.add("hidden");
+      subjectScreen.classList.remove("hidden");
+      window.scrollTo(0, 0);
+    }
+
+    // 6. BACK BUTTON
+    document.getElementById("backBtn").addEventListener("click", function () {
+      subjectScreen.classList.add("hidden");
+      classScreen.classList.remove("hidden");
+    });
+  </script>
+
+  <!-- ===================== FOOTER (the same on every page) ===================== -->
+  <footer>
+    <div class="container">
+      <p class="principle">We create quality, not quantity.</p>
+      <p>Exposure — Knowledge — Confidence</p>
+      <p class="contact-line">Phone / WhatsApp: <a href="https://wa.me/923126273787">0312-6273787</a> &nbsp;·&nbsp; Email: smalikkpr@gmail.com</p>
+      <p style="font-size:.85rem;">© 2026 Super-30. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- The menu script, shared by every page -->
+  <script src="site.js"></script>
+
+</body>
+</html>

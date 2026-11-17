@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Super-30 logo">
+  <rect x="1.5" y="1.5" width="117" height="117" rx="22" fill="#0f4d3a" stroke="#d9a441" stroke-width="3"/>
+  <rect x="24" y="70" width="18" height="28" rx="3" fill="#d9a441"/>
+  <rect x="51" y="52" width="18" height="46" rx="3" fill="#d9a441"/>
+  <rect x="78" y="34" width="18" height="64" rx="3" fill="#d9a441"/>
+  <path d="M87 12 L90 19 L98 19 L92 24 L94 31 L87 27 L80 31 L82 24 L76 19 L84 19 Z" fill="#ffffff"/>
+</svg>
