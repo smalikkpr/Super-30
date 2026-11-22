@@ -2005,12 +2005,10 @@ const UNIT = {
       "answer": 0
      },
      {
-      "q": "کسی غلط کام کا اعتراف کرنا",
-      "urduQ": true,
-      "i": "Which word has this meaning?",
+      "q": "We persuaded him to ___ his crime.",
       "options": [
-       "Confess",
-       "Admit"
+       "confess",
+       "admit"
       ],
       "answer": 0
      },
@@ -2023,22 +2021,18 @@ const UNIT = {
       "answer": 0
      },
      {
-      "q": "دوستی، دوستانہ تعلق",
-      "urduQ": true,
-      "i": "Which word has this meaning?",
+      "q": "I bear no ___ towards her.",
       "options": [
-       "Enmity",
-       "Amity"
+       "amity",
+       "enmity"
       ],
       "answer": 1
      },
      {
-      "q": "بغیر اخلاقی اقدار کے",
-      "urduQ": true,
-      "i": "Which word has this meaning?",
+      "q": "It is ___ to harm animals for fun.",
       "options": [
-       "Immoral",
-       "Amoral"
+       "amoral",
+       "immoral"
       ],
       "answer": 1
      },
@@ -2059,12 +2053,10 @@ const UNIT = {
       "answer": 0
      },
      {
-      "q": "سننے سے متعلق. سمعی",
-      "urduQ": true,
-      "i": "Which word has this meaning?",
+      "q": "He took an ___ test.",
       "options": [
-       "Aural",
-       "Oral"
+       "oral",
+       "aural"
       ],
       "answer": 0
      },
@@ -2127,12 +2119,10 @@ const UNIT = {
       "answer": 0
      },
      {
-      "q": "ہر دلعزیز ۔ خوش خلق",
-      "urduQ": true,
-      "i": "Which word has this meaning?",
+      "q": "Her parents seemed very ___.",
       "options": [
-       "Amiable",
-       "Amicable"
+       "amiable",
+       "amicable"
       ],
       "answer": 0
      },
@@ -2171,12 +2161,10 @@ const UNIT = {
       "answer": 0
      },
      {
-      "q": "پسماندہ",
-      "urduQ": true,
-      "i": "Which word has this meaning?",
+      "q": "I lost my balance and fell ___.",
       "options": [
-       "Backwards",
-       "Backward"
+       "backward",
+       "backwards"
       ],
       "answer": 1
      },
@@ -2279,12 +2267,10 @@ const UNIT = {
       "answer": 0
      },
      {
-      "q": "قائل کرنا",
-      "urduQ": true,
-      "i": "Which word has this meaning?",
+      "q": "The manager ___ the client to buy his product.",
       "options": [
-       "Persuade",
-       "Convince"
+       "convinced",
+       "persuaded"
       ],
       "answer": 1
      },
@@ -2379,22 +2365,18 @@ const UNIT = {
       "answer": 1
      },
      {
-      "q": "الفاظ و معانی کی اصل اور تاریخ کا علم",
-      "urduQ": true,
-      "i": "Which word has this meaning?",
+      "q": "She developed an interest in ___.",
       "options": [
-       "Entomology",
-       "Etymology"
+       "entomology",
+       "etymology"
       ],
       "answer": 1
      },
      {
-      "q": "کسی خاص مقصد کے لیے",
-      "urduQ": true,
-      "i": "Which word has this meaning?",
+      "q": "The speech was written ___ for the occasion.",
       "options": [
-       "Especially",
-       "Specially"
+       "especially",
+       "specially"
       ],
       "answer": 1
      },
@@ -2407,12 +2389,10 @@ const UNIT = {
       "answer": 1
      },
      {
-      "q": "پوشیدہ",
-      "urduQ": true,
-      "i": "Which word has this meaning?",
+      "q": "They were given ___ instructions.",
       "options": [
-       "Explicit",
-       "Implicit"
+       "implicit",
+       "explicit"
       ],
       "answer": 1
      }
@@ -2459,12 +2439,10 @@ const UNIT = {
       "answer": 0
      },
      {
-      "q": "صحت بخش",
-      "urduQ": true,
-      "i": "Which word has this meaning?",
+      "q": "Eat ___ food.",
       "options": [
-       "Healthful",
-       "Healthy"
+       "healthful",
+       "healthy"
       ],
       "answer": 0
      },
@@ -2503,11 +2481,10 @@ const UNIT = {
     ],
     [
      {
-      "q": "to leave your own country and go to live in another country",
-      "i": "Which word has this meaning?",
+      "q": "My grandfather ___ from Pakistan.",
       "options": [
-       "Emigrate",
-       "Immigrate"
+       "emigrated",
+       "immigrated"
       ],
       "answer": 0
      },
@@ -2848,12 +2825,10 @@ const UNIT = {
       "answer": 1
      },
      {
-      "q": "روپوں کا چیک",
-      "urduQ": true,
-      "i": "Which word has this meaning?",
+      "q": "This is ___ for one thousand rupees.",
       "options": [
-       "Cheque",
-       "Check"
+       "cheque",
+       "check"
       ],
       "answer": 0
      },
@@ -2890,12 +2865,10 @@ const UNIT = {
       "answer": 1
      },
      {
-      "q": "ضبط کرنا",
-      "urduQ": true,
-      "i": "Which word has this meaning?",
+      "q": "The police ___ the shipment.",
       "options": [
-       "Cease",
-       "Seize"
+       "ceased",
+       "seized"
       ],
       "answer": 1
      },
