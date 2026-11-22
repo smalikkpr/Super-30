@@ -60,7 +60,7 @@
     /* Back link */
     .back-btn {
       background: none; border: none; color: var(--muted); font-family: inherit; font-size: .95rem;
-      cursor: pointer; text-decoration: underline; margin-bottom: 18px;
+      cursor: pointer; text-decoration: underline; margin-bottom: 18px; display: block;
     }
     .back-btn:hover { color: var(--green); }
 
@@ -82,6 +82,8 @@
     .badge { font-size: .8rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
     .badge.ready { background: var(--gold); color: #0a3528; }
     .badge.soon { background: #ece6d9; color: var(--muted); }
+    .list-head { font-size: 1.3rem; margin-top: 28px; }
+    .chapter .num.doc { background: var(--gold); color: var(--green); }
 
     /* Message box */
     .message {
@@ -130,6 +132,8 @@
     <p class="tag" id="subjectClass">Class 11</p>
     <h1 id="subjectName">English-I</h1>
 
+    <ul class="chapters" id="paperList"></ul>
+    <h2 class="list-head" id="testsHead">Online Tests</h2>
     <ul class="chapters" id="chapterList"></ul>
     <p class="message hidden" id="comingSoon"></p>
   </div>
@@ -148,8 +152,13 @@
         subjects: [
           {
             name: "English-I",
+            // Paper Pattern and Model Paper: add  file: "name.pdf"  when the PDF is ready
+            papers: [
+              { title: "Paper Pattern" },
+              { title: "Model Paper" }
+            ],
             chapters: [
-              { title: "Khatam-un-Nabiyeen Hazrat Muhammad (ﷺ)", file: "unit1-test.html" },
+              { title: "Khatam-un-Nabiyeen Hazrat Muhammad (ﷺ)", file: "class11-english-unit1.html" },
               { title: "Responsibility of the Youth in Nation-Building", author: "Quaid-e-Azam" },
               { title: "A Bird Came Down the Walk (Poem)", author: "Emily Dickinson" },
               { title: "Team Moon", author: "Catherine Thimmesh" },
@@ -215,6 +224,8 @@
     const classList = document.getElementById("classList");
     const chapterList = document.getElementById("chapterList");
     const comingSoon = document.getElementById("comingSoon");
+    const paperList = document.getElementById("paperList");
+    const testsHead = document.getElementById("testsHead");
 
     // 4. MAKE THE CLASS BUTTONS, EACH WITH ITS HIDDEN SUBJECT LIST
     classes.forEach(function (cls) {
@@ -251,9 +262,31 @@
       document.getElementById("subjectClass").textContent = cls.name;
       document.getElementById("subjectName").textContent = subject.name;
       chapterList.innerHTML = "";
+      paperList.innerHTML = "";
+      comingSoon.classList.add("hidden");
+
+      // Paper Pattern and Model Paper (PDF files)
+      (subject.papers || []).forEach(function (p) {
+        const li = document.createElement("li");
+        const item = document.createElement(p.file ? "a" : "button");
+        item.className = "chapter";
+        if (p.file) { item.href = p.file; item.target = "_blank"; }
+        item.innerHTML = '<span class="num doc">PDF</span><span class="title">' + p.title + "</span>" +
+          (p.file ? '<span class="badge ready">Open →</span>' : '<span class="badge soon">Coming soon</span>');
+        if (!p.file) {
+          item.addEventListener("click", function () {
+            comingSoon.textContent = "The " + p.title + " is being prepared. As soon as it is ready, you will be informed. Stay connected till then. Thank you.";
+            comingSoon.classList.remove("hidden");
+            comingSoon.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          });
+        }
+        li.appendChild(item);
+        paperList.appendChild(li);
+      });
+      paperList.classList.toggle("hidden", !subject.papers);
+      testsHead.classList.toggle("hidden", !(subject.papers && subject.chapters));
 
       if (subject.chapters) {
-        comingSoon.classList.add("hidden");
         chapterList.classList.remove("hidden");
 
         subject.chapters.forEach(function (ch, i) {
