@@ -152,10 +152,11 @@
         subjects: [
           {
             name: "English-I",
-            // Paper Pattern and Model Paper: add  file: "name.pdf"  when the PDF is ready
+            // Paper Pattern, Model Paper (PDF files) and Pair of Words (test page, test: true)
             papers: [
               { title: "Paper Pattern", file: "english11-paper-pattern.pdf" },
-              { title: "Model Paper", file: "english11-model-paper.pdf" }
+              { title: "Model Paper", file: "english11-model-paper.pdf" },
+              { title: "Pair of Words", file: "english11-pair-of-words.html", test: true }
             ],
             chapters: [
               { title: "Khatam-un-Nabiyeen Hazrat Muhammad (ﷺ)", file: "class11-english-unit1.html" },
@@ -270,9 +271,10 @@
         const li = document.createElement("li");
         const item = document.createElement(p.file ? "a" : "button");
         item.className = "chapter";
-        if (p.file) { item.href = p.file; item.target = "_blank"; }
-        item.innerHTML = '<span class="num doc">PDF</span><span class="title">' + p.title + "</span>" +
-          (p.file ? '<span class="badge ready">Open →</span>' : '<span class="badge soon">Coming soon</span>');
+        if (p.file) { item.href = p.file; if (!p.test) item.target = "_blank"; }
+        item.innerHTML = '<span class="num doc">' + (p.test ? "Aa" : "PDF") + '</span><span class="title">' + p.title +
+          (p.test ? '<span class="author">110 MCQs · 11 tests</span>' : "") + "</span>" +
+          (p.file ? '<span class="badge ready">' + (p.test ? "Start Test →" : "Open →") + "</span>" : '<span class="badge soon">Coming soon</span>');
         if (!p.file) {
           item.addEventListener("click", function () {
             comingSoon.textContent = "The " + p.title + " is being prepared. As soon as it is ready, you will be informed. Stay connected till then. Thank you.";

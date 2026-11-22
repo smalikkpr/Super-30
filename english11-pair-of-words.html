@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pair of Words | Super-30</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">  <!-- the small logo on the browser tab -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="site.css">  <!-- header, menu, footer -->
+  <link rel="stylesheet" href="quiz.css">  <!-- the test screens -->
+</head>
+
+<body>
+
+  <!-- ===================== HEADER (the same on every page) ===================== -->
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="logo.svg" alt="Super-30 logo">
+        Super<span>-30</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tests.html" class="active">Helping Material</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===================== SCREEN 1: CATEGORIES ===================== -->
+  <div class="box" id="homeScreen">
+    <a href="tests.html" class="back-btn">← All subjects</a>
+    <p class="tag" id="unitTag"></p>
+    <h1 id="unitTitle"></h1>
+    <p class="intro">Online Tests. Choose a type of test.</p>
+    <div class="list" id="categoryList"></div>
+  </div>
+
+  <!-- ===================== SCREEN 2: TESTS OF ONE CATEGORY ===================== -->
+  <div class="box hidden" id="listScreen">
+    <button class="back-btn" id="backHome">← All types of tests</button>
+    <h1 id="listTitle"></h1>
+    <p class="intro" id="listIntro"></p>
+    <div class="list" id="testList"></div>
+  </div>
+
+  <!-- ===================== SCREEN 3: THE QUIZ ===================== -->
+  <div class="box hidden" id="quizScreen">
+    <div class="top-line">
+      <span id="counter">Question 1 of 10</span>
+      <span id="scoreNow">Score: 0</span>
+    </div>
+    <button class="leave-btn" id="leaveBtn">✕ Leave Test</button>
+    <p class="test-name" id="testName"></p>
+    <div class="progress"><div id="bar"></div></div>
+    <p class="instruction" id="instruction"></p>
+    <p class="question" id="question"></p>
+    <div class="options" id="options"></div>
+    <p class="feedback" id="feedback"></p>
+    <button class="btn hidden" id="nextBtn">Next Question</button>
+  </div>
+
+  <!-- ===================== SCREEN 4: THE RESULT ===================== -->
+  <div class="box hidden" id="resultScreen">
+    <h1 style="text-align:center;">Test Complete</h1>
+    <p class="test-name" id="resultName" style="text-align:center;"></p>
+    <p class="score" id="finalScore">0 / 10</p>
+    <p class="message" id="message"></p>
+    <div class="buttons">
+      <button class="btn" id="nextTestBtn">Next Test →</button>
+      <button class="btn btn-outline" id="restartBtn">Try Again</button>
+      <button class="btn btn-outline" id="listBtn">Choose Another Test</button>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER (the same on every page) ===================== -->
+  <footer>
+    <div class="container">
+      <p class="principle">We create quality, not quantity.</p>
+      <p>Exposure — Knowledge — Confidence</p>
+      <p class="contact-line">Phone / WhatsApp: <a href="https://wa.me/923126273787">0312-6273787</a> &nbsp;·&nbsp; Email: smalikkpr@gmail.com</p>
+      <p style="font-size:.85rem;">© 2026 Super-30. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>                       <!-- the mobile menu -->
+  <script src="english11-pair-of-words-data.js"></script> <!-- the questions -->
+  <script src="quiz.js"></script>                       <!-- the test engine -->
+
+</body>
+</html>

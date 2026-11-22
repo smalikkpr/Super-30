@@ -173,7 +173,11 @@ function showResult() {
 el("restartBtn").addEventListener("click", function () { startTest(cat, testNo); });
 el("nextTestBtn").addEventListener("click", function () { startTest(cat, testNo + 1); });
 el("listBtn").addEventListener("click", function () { openCategory(cat); });
+// A page with only one type of test (e.g. Pair of Words) opens its test list at once
+const single = UNIT.categories.length === 1;
+if (single) el("backHome").textContent = "← All subjects";
 el("backHome").addEventListener("click", function () {
+  if (single) { location.href = "tests.html"; return; }
   history.replaceState(null, "", location.pathname);
   show("homeScreen");
 });
@@ -181,7 +185,7 @@ el("backHome").addEventListener("click", function () {
 // 6. OPEN A TEST FROM THE LINK, e.g. page.html#synonyms-2
 (function () {
   const m = location.hash.match(/^#([a-z]+)(?:-(\d+))?$/);
-  if (!m) return;
+  if (!m) { if (single) openCategory(UNIT.categories[0]); return; }
   const c = UNIT.categories.find(function (x) { return x.id === m[1]; });
   if (!c) return;
   const n = m[2] ? Number(m[2]) - 1 : -1;
