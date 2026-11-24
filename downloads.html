@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloads | Super-30</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">  <!-- the small logo on the browser tab -->
+
+  <!-- Fonts from Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- One style file for the whole website -->
+  <link rel="stylesheet" href="site.css">
+
+  <!-- Styles only for this page -->
+  <style>
+    .group-title { font-size: 1.6rem; margin: 0 0 18px; }
+    .group { margin-bottom: 56px; }
+
+    /* ---------- The book card ---------- */
+    .book {
+      display: grid; grid-template-columns: 280px 1fr; gap: 36px; align-items: start;
+      background: #fff; border-radius: 14px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,.06);
+    }
+    .book img { width: 100%; border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,.18); }
+    .book h3 { font-family: "Fraunces", Georgia, serif; font-size: 1.6rem; color: var(--green, #0f4d3a); line-height: 1.25; margin: 0 0 6px; }
+    .book .by { color: #5b6b64; margin: 0 0 18px; }
+    .book .for { display: inline-block; background: #fbf1dc; color: #8a5f12; font-weight: 600; font-size: .85rem;
+                 padding: 4px 12px; border-radius: 20px; margin-bottom: 14px; }
+    .features { list-style: none; padding: 0; margin: 0 0 24px; }
+    .features li { padding: 6px 0 6px 30px; position: relative; line-height: 1.5; }
+    .features li::before { content: "✓"; position: absolute; left: 0; top: 6px; width: 20px; height: 20px; border-radius: 50%;
+                           background: #0f4d3a; color: #d9a441; font-size: .75rem; font-weight: 700;
+                           display: flex; align-items: center; justify-content: center; }
+    .get { background: #faf6ee; border-radius: 10px; padding: 18px 20px; }
+    .get p { margin: 0 0 12px; }
+    .wa-btn {
+      display: inline-flex; align-items: center; gap: 10px; background: #1f8f4e; color: #fff; text-decoration: none;
+      font-weight: 600; padding: 12px 22px; border-radius: 8px;
+    }
+    .wa-btn:hover { background: #187a42; }
+
+    /* ---------- PDF files ---------- */
+    .files { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    .file {
+      display: flex; align-items: center; gap: 16px; background: #fff; border-radius: 10px; padding: 16px 20px;
+      text-decoration: none; color: inherit; border: 2px solid transparent; box-shadow: 0 2px 10px rgba(0,0,0,.04);
+    }
+    .file:hover { border-color: #d9a441; }
+    .file .icon { flex-shrink: 0; width: 46px; height: 46px; border-radius: 8px; background: #b3412f; color: #fff;
+                  font-weight: 700; font-size: .8rem; display: flex; align-items: center; justify-content: center; }
+    .file .name { flex: 1; font-weight: 600; }
+    .file .name small { display: block; font-weight: 400; color: #5b6b64; }
+    .file .go { color: #0f4d3a; font-weight: 600; white-space: nowrap; }
+
+    @media (max-width: 760px) {
+      .book { grid-template-columns: 1fr; padding: 22px; gap: 24px; }
+      .book img { max-width: 260px; margin: 0 auto; display: block; }
+      .file .go { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===================== HEADER (the same on every page) ===================== -->
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="logo.svg" alt="Super-30 logo">
+        Super<span>-30</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tests.html">Helping Material</a></li>
+        <li><a href="downloads.html" class="active">Downloads</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="tag">Books and Files</span>
+      <h1>Downloads</h1>
+      <p>Books for teachers, and papers and notes for students.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <!-- ===================== GROUP 1: BOOKS FOR TEACHERS ===================== -->
+      <div class="group">
+        <h2 class="group-title">For Teachers</h2>
+
+        <div class="book">
+          <img src="book-english11-teachers.jpg" alt="Cover of English 11: A Textbook Supplement for Teachers">
+          <div>
+            <span class="for">Edition 2026-27 · 14 Units · PDF</span>
+            <h3>English 11: A Textbook Supplement for Teachers</h3>
+            <p class="by">Prepared by Prof. Shahid Malik · Super 30 Series</p>
+
+            <ul class="features">
+              <li>Based on the new 2026-27 edition, with all changes from 2025-26 covered</li>
+              <li>Same layout as the textbook, so it’s easy to follow in class</li>
+              <li>A quick summary of each lesson, with a one-line core idea and a message for the students</li>
+              <li>Word meanings for quick help while teaching</li>
+              <li>Clear explanations of facts, figures and terms</li>
+              <li>Teacher’s notes inside each lesson</li>
+              <li>Objective exercises solved</li>
+              <li>Textbook mistakes (factual, grammar, spelling, MCQs) marked, with a full list at the end of every chapter</li>
+              <li>Made only for teachers. It saves time, and the PDF stays with you to prepare lectures anywhere, anytime.</li>
+            </ul>
+
+            <div class="get">
+              <p><strong>How to get:</strong> Contact us on WhatsApp: 0312-6273787</p>
+              <a class="wa-btn" target="_blank"
+                 href="https://wa.me/923126273787?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20buy%20the%20book%20%22English%2011%3A%20A%20Textbook%20Supplement%20for%20Teachers%22.">
+                💬 Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== GROUP 2: FILES FOR STUDENTS ===================== -->
+      <!-- To add a file: copy one <li>...</li> block and change the file name and title -->
+      <div class="group">
+        <h2 class="group-title">For Students: Class 11 English</h2>
+        <ul class="files">
+          <li>
+            <a class="file" href="english11-paper-pattern.pdf" target="_blank">
+              <span class="icon">PDF</span>
+              <span class="name">Paper Pattern<small>Class 11 English, 2026-27</small></span>
+              <span class="go">Download ↓</span>
+            </a>
+          </li>
+          <li>
+            <a class="file" href="english11-model-paper.pdf" target="_blank">
+              <span class="icon">PDF</span>
+              <span class="name">Model Paper<small>Class 11 English, 2026-27</small></span>
+              <span class="go">Download ↓</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER (the same on every page) ===================== -->
+  <footer>
+    <div class="container">
+      <p class="principle">We create quality, not quantity.</p>
+      <p>Exposure — Knowledge — Confidence</p>
+      <p class="contact-line">Phone / WhatsApp: <a href="https://wa.me/923126273787">0312-6273787</a> &nbsp;·&nbsp; Email: smalikkpr@gmail.com</p>
+      <p style="font-size:.85rem;">© 2026 Super-30. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>  <!-- the mobile menu -->
+
+</body>
+</html>
