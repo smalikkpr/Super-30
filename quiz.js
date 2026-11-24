@@ -122,6 +122,7 @@ function showQuestion() {
 
   el("feedback").textContent = "";
   el("feedback").className = "feedback";
+  meaningsBox().classList.add("hidden");
   el("nextBtn").classList.add("hidden");
 }
 
@@ -142,9 +143,31 @@ function choose(i) {
     fb.className = "feedback wrong";
   }
   el("scoreNow").textContent = "Score: " + score;
+  showMeanings(item);
   el("nextBtn").textContent = qNo + 1 < questions.length ? "Next Question" : "See Result";
   el("nextBtn").classList.remove("hidden");
   el("nextBtn").focus({ preventScroll: true });
+}
+
+// Urdu meanings of both words (Pair of Words): shown after every answer
+function meaningsBox() {
+  let box = el("meanings");
+  if (!box) {
+    box = document.createElement("div");
+    box.id = "meanings";
+    box.className = "meanings hidden";
+    el("feedback").after(box);
+  }
+  return box;
+}
+function showMeanings(item) {
+  const box = meaningsBox();
+  if (!item.m) return;
+  box.innerHTML = item.m.map(function (x) {
+    return '<div class="pair' + (x.ok ? " ok" : "") + '"><span class="w">' + x.w + "</span>" +
+           '<span class="ur" lang="ur">' + x.ur + "</span></div>";
+  }).join("");
+  box.classList.remove("hidden");
 }
 
 el("nextBtn").addEventListener("click", function () {

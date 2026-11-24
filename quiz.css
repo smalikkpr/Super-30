@@ -97,6 +97,14 @@ h1, h2 { font-family: "Fraunces", Georgia, serif; color: var(--green); line-heig
 .btn.btn-outline { background: none; border: 2px solid var(--gold); color: #0a3528; margin: 0; }
 .btn.btn-outline:hover { background: #fbf1dc; }
 
+/* Urdu meanings box (Pair of Words) */
+.meanings { background: var(--cream); border-radius: 8px; padding: 6px 16px; margin: 4px 0 18px; }
+.meanings .pair { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 8px 0; }
+.meanings .pair + .pair { border-top: 1px solid #e6dcc8; }
+.meanings .w { font-weight: 700; color: var(--muted); white-space: nowrap; }
+.meanings .pair.ok .w { color: var(--right); }
+.meanings .ur { font-family: "Noto Nastaliq Urdu", serif; direction: rtl; text-align: right; font-size: 1.1rem; line-height: 2.2; }
+
 /* Result screen */
 .score { font-family: "Fraunces", serif; font-size: 4rem; color: var(--green); text-align: center; }
 .message { text-align: center; margin-bottom: 24px; color: var(--muted); }

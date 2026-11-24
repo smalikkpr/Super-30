@@ -19,7 +19,18 @@ const UNIT = {
        "Excess",
        "Access"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Excess",
+        "ur": "زیادتی ۔کثرت",
+        "ok": true
+       },
+       {
+        "w": "Access",
+        "ur": "پہنچ۔ رسائی"
+       }
+      ]
      },
      {
       "q": "He decided to ___ a child.",
@@ -27,7 +38,18 @@ const UNIT = {
        "adopt",
        "adapt"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Adopt",
+        "ur": "کسی بچے کو اپنا بیٹا بنا لینا",
+        "ok": true
+       },
+       {
+        "w": "Adapt",
+        "ur": "خود کو ڈھال لینا"
+       }
+      ]
      },
      {
       "q": "We persuaded him to ___ his crime.",
@@ -35,7 +57,18 @@ const UNIT = {
        "confess",
        "admit"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Confess",
+        "ur": "کسی غلط کام کا اعتراف کرنا",
+        "ok": true
+       },
+       {
+        "w": "Admit",
+        "ur": "تسلیم کر لینا، مان لینا"
+       }
+      ]
      },
      {
       "q": "He gave me good ___.",
@@ -43,7 +76,18 @@ const UNIT = {
        "advice",
        "advise"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Advice",
+        "ur": "نصیحت۔ مشورہ",
+        "ok": true
+       },
+       {
+        "w": "Advise",
+        "ur": "نصیحت کرنا"
+       }
+      ]
      },
      {
       "q": "I bear no ___ towards her.",
@@ -51,7 +95,18 @@ const UNIT = {
        "amity",
        "enmity"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Enmity",
+        "ur": "دشمنی",
+        "ok": true
+       },
+       {
+        "w": "Amity",
+        "ur": "دوستی، دوستانہ تعلق"
+       }
+      ]
      },
      {
       "q": "It is ___ to harm animals for fun.",
@@ -59,7 +114,18 @@ const UNIT = {
        "amoral",
        "immoral"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Immoral",
+        "ur": "غیر اخلاقی",
+        "ok": true
+       },
+       {
+        "w": "Amoral",
+        "ur": "بغیر اخلاقی اقدار کے"
+       }
+      ]
      },
      {
       "q": "The teacher ___ us of the new test date.",
@@ -67,7 +133,18 @@ const UNIT = {
        "appraised",
        "apprised"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Apprise",
+        "ur": "آگاہ کرنا",
+        "ok": true
+       },
+       {
+        "w": "Appraise",
+        "ur": "جائزہ لینا"
+       }
+      ]
      },
      {
       "q": "The cost must not ___ ten thousand rupees.",
@@ -75,7 +152,18 @@ const UNIT = {
        "exceed",
        "accede"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Exceed",
+        "ur": "زیادہ ہو جانا. حد سے بڑھ جانا",
+        "ok": true
+       },
+       {
+        "w": "Accede",
+        "ur": "مان لینا"
+       }
+      ]
      },
      {
       "q": "He took an ___ test.",
@@ -83,7 +171,18 @@ const UNIT = {
        "oral",
        "aural"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Oral",
+        "ur": "زبانی",
+        "ok": true
+       },
+       {
+        "w": "Aural",
+        "ur": "سننے سے متعلق. سمعی"
+       }
+      ]
      },
      {
       "q": "Pay ___ to your work.",
@@ -91,7 +190,18 @@ const UNIT = {
        "intention",
        "attention"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Attention",
+        "ur": "توجہ",
+        "ok": true
+       },
+       {
+        "w": "Intention",
+        "ur": "نیت. ارادہ"
+       }
+      ]
      }
     ],
     [
@@ -101,7 +211,18 @@ const UNIT = {
        "avocation",
        "vocation"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Vocation",
+        "ur": "پیشہ",
+        "ok": true
+       },
+       {
+        "w": "Avocation",
+        "ur": "مشغلہ"
+       }
+      ]
      },
      {
       "q": "How much money has been ___ to us?",
@@ -109,7 +230,18 @@ const UNIT = {
        "a lot",
        "allotted"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Allot",
+        "ur": "کسی کو کوئی چیز دینا",
+        "ok": true
+       },
+       {
+        "w": "A lot",
+        "ur": "بہت زیادہ"
+       }
+      ]
      },
      {
       "q": "I’ve ___ spent my salary.",
@@ -117,7 +249,18 @@ const UNIT = {
        "all ready",
        "already"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Already",
+        "ur": "پہلے ہی",
+        "ok": true
+       },
+       {
+        "w": "All ready",
+        "ur": "مکمل طور پر تیار"
+       }
+      ]
      },
      {
       "q": "You deserve a ___ for being so helpful.",
@@ -125,7 +268,18 @@ const UNIT = {
        "reward",
        "award"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Reward",
+        "ur": "صلہ",
+        "ok": true
+       },
+       {
+        "w": "Award",
+        "ur": "انعام یا انعام دینا"
+       }
+      ]
      },
      {
       "q": "Post in some villages is distributed on ___ days.",
@@ -133,7 +287,18 @@ const UNIT = {
        "alternative",
        "alternate"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Alternate",
+        "ur": "ایک چھوڑ کر ایک یکے بعد دیگرے",
+        "ok": true
+       },
+       {
+        "w": "Alternative",
+        "ur": "متبادل"
+       }
+      ]
      },
      {
       "q": "Weather ___ everything.",
@@ -141,7 +306,18 @@ const UNIT = {
        "affects",
        "effects"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Affect",
+        "ur": "اثر انداز ہونا",
+        "ok": true
+       },
+       {
+        "w": "Effect",
+        "ur": "اثر"
+       }
+      ]
      },
      {
       "q": "Her parents seemed very ___.",
@@ -149,7 +325,18 @@ const UNIT = {
        "amiable",
        "amicable"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Amiable",
+        "ur": "ہر دلعزیز ۔ خوش خلق",
+        "ok": true
+       },
+       {
+        "w": "Amicable",
+        "ur": "دوستانہ"
+       }
+      ]
      },
      {
       "q": "A triangle has three ___.",
@@ -157,7 +344,18 @@ const UNIT = {
        "angels",
        "angles"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Angle",
+        "ur": "زاویہ",
+        "ok": true
+       },
+       {
+        "w": "Angel",
+        "ur": "فرشتہ ۔ مہربان شخص"
+       }
+      ]
      },
      {
       "q": "I ___ to pass the test.",
@@ -165,7 +363,18 @@ const UNIT = {
        "expect",
        "anticipate"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Expect",
+        "ur": "توقع کرنا",
+        "ok": true
+       },
+       {
+        "w": "Anticipate",
+        "ur": "توقع کرنا"
+       }
+      ]
      },
      {
       "q": "The cat was sitting ___ her baby.",
@@ -173,7 +382,18 @@ const UNIT = {
        "besides",
        "beside"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Beside",
+        "ur": "قریب، نزدیک",
+        "ok": true
+       },
+       {
+        "w": "Besides",
+        "ur": "کے علاوہ"
+       }
+      ]
      }
     ],
     [
@@ -183,7 +403,18 @@ const UNIT = {
        "between",
        "among"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Between",
+        "ur": "(عموماً دو کے) درمیان",
+        "ok": true
+       },
+       {
+        "w": "Among",
+        "ur": "(عموماً دو سے زیادہ کے) بیچ میں یا درمیان"
+       }
+      ]
      },
      {
       "q": "I lost my balance and fell ___.",
@@ -191,7 +422,18 @@ const UNIT = {
        "backward",
        "backwards"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Backwards",
+        "ur": "پیچھے کی جانب",
+        "ok": true
+       },
+       {
+        "w": "Backward",
+        "ur": "اُلٹا۔ الٹے پاؤں۔ پسِ پا ، پسماندہ"
+       }
+      ]
      },
      {
       "q": "He writes on the ___.",
@@ -199,7 +441,18 @@ const UNIT = {
        "board",
        "bored"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Board",
+        "ur": "تختہ",
+        "ok": true
+       },
+       {
+        "w": "Bored",
+        "ur": "بیزار"
+       }
+      ]
      },
      {
       "q": "Use the ___ to stop it.",
@@ -207,7 +460,18 @@ const UNIT = {
        "break",
        "brake"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Brake",
+        "ur": "بریک",
+        "ok": true
+       },
+       {
+        "w": "Break",
+        "ur": "توڑنا"
+       }
+      ]
      },
      {
       "q": "He held his ___.",
@@ -215,7 +479,18 @@ const UNIT = {
        "breathe",
        "breath"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Breath",
+        "ur": "سانس",
+        "ok": true
+       },
+       {
+        "w": "Breathe",
+        "ur": "سانس لینا"
+       }
+      ]
      },
      {
       "q": "She was dressed in a red ___ gown.",
@@ -223,7 +498,18 @@ const UNIT = {
        "bridal",
        "bridle"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Bridal",
+        "ur": "دُلہن سے متعلق ، عروُسی",
+        "ok": true
+       },
+       {
+        "w": "Bridle",
+        "ur": "(گھوڑے کی)لگام"
+       }
+      ]
      },
      {
       "q": "Use a ___ to cover the goods.",
@@ -231,7 +517,18 @@ const UNIT = {
        "canvass",
        "canvas"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Canvas",
+        "ur": "ایک قسم کا مضبوط موٹا کپڑا",
+        "ok": true
+       },
+       {
+        "w": "Canvass",
+        "ur": "حمایت یا ووٹ حاصل کرنے کی کوشش کرنا"
+       }
+      ]
      },
      {
       "q": "This scene was cut by the ___ board.",
@@ -239,7 +536,18 @@ const UNIT = {
        "censor",
        "censure"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Censor",
+        "ur": "کانٹ چھانٹ (کرنے والا)",
+        "ok": true
+       },
+       {
+        "w": "Censure",
+        "ur": "تنقید کرنا ۔ ملامت کرنا"
+       }
+      ]
      },
      {
       "q": "I hate her ___ habits.",
@@ -247,7 +555,18 @@ const UNIT = {
        "childlike",
        "childish"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Childish",
+        "ur": "بچوں جیسی نا پختہ یا احمقانہ",
+        "ok": true
+       },
+       {
+        "w": "Childlike",
+        "ur": "بچوں کی سی، طفلانہ"
+       }
+      ]
      },
      {
       "q": "They wear simple ___.",
@@ -255,7 +574,18 @@ const UNIT = {
        "clothes",
        "cloths"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Clothes",
+        "ur": "(سِلے ہوئے)کپڑے",
+        "ok": true
+       },
+       {
+        "w": "Cloths",
+        "ur": "(بغیر سِلے )کپڑے"
+       }
+      ]
      }
     ],
     [
@@ -265,7 +595,18 @@ const UNIT = {
        "course",
        "coarse"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Course",
+        "ur": "نصاب",
+        "ok": true
+       },
+       {
+        "w": "Coarse",
+        "ur": "کھر دری"
+       }
+      ]
      },
      {
       "q": "These two ideas ___ each other.",
@@ -273,7 +614,18 @@ const UNIT = {
        "compliment",
        "complement"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Complement",
+        "ur": "تکمیل کرنا",
+        "ok": true
+       },
+       {
+        "w": "Compliment",
+        "ur": "تعریف کرنا۔ توصیف کرنا"
+       }
+      ]
      },
      {
       "q": "I am ___ of my success.",
@@ -281,7 +633,18 @@ const UNIT = {
        "confident",
        "confidante"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Confident",
+        "ur": "پُر اعتماد",
+        "ok": true
+       },
+       {
+        "w": "Confidante",
+        "ur": "خاتون ہم راز، محرم راز"
+       }
+      ]
      },
      {
       "q": "His ___ is not dead but alive.",
@@ -289,7 +652,18 @@ const UNIT = {
        "conscience",
        "conscious"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Conscience",
+        "ur": "ضمیر",
+        "ok": true
+       },
+       {
+        "w": "Conscious",
+        "ur": "باخبر آگاہ"
+       }
+      ]
      },
      {
       "q": "The manager ___ the client to buy his product.",
@@ -297,7 +671,18 @@ const UNIT = {
        "convinced",
        "persuaded"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Persuade",
+        "ur": "مائل کرنا۔ راغب کرنا",
+        "ok": true
+       },
+       {
+        "w": "Convince",
+        "ur": "قائل کرنا"
+       }
+      ]
      },
      {
       "q": "I am a member of the union ___.",
@@ -305,7 +690,18 @@ const UNIT = {
        "council",
        "counsel"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Council",
+        "ur": "کونسل(جماعت یا کمیٹی)",
+        "ok": true
+       },
+       {
+        "w": "Counsel",
+        "ur": "مشورہ ۔نصیحت"
+       }
+      ]
      },
      {
       "q": "She likes to ___ at restaurants.",
@@ -313,7 +709,18 @@ const UNIT = {
        "din",
        "dine"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Dine",
+        "ur": "کھانا کھانا",
+        "ok": true
+       },
+       {
+        "w": "Din",
+        "ur": "شور و غوغا"
+       }
+      ]
      },
      {
       "q": "___ is easier than ascent.",
@@ -321,7 +728,18 @@ const UNIT = {
        "Dissent",
        "Descent"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Descent",
+        "ur": "اُترائی، نیچائی",
+        "ok": true
+       },
+       {
+        "w": "Dissent",
+        "ur": "اختلاف"
+       }
+      ]
      },
      {
       "q": "We buy milk at the ___.",
@@ -329,7 +747,18 @@ const UNIT = {
        "diary",
        "dairy"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Dairy",
+        "ur": "شِیر خانہ، ڈیری فارم",
+        "ok": true
+       },
+       {
+        "w": "Diary",
+        "ur": "روز نامچہ"
+       }
+      ]
      },
      {
       "q": "After dinner, we have ice cream as ___.",
@@ -337,7 +766,18 @@ const UNIT = {
        "desert",
        "dessert"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Dessert",
+        "ur": "کھانے کے بعد والی میٹھی ڈِش",
+        "ok": true
+       },
+       {
+        "w": "Desert",
+        "ur": "صحرا"
+       }
+      ]
      }
     ],
     [
@@ -347,7 +787,18 @@ const UNIT = {
        "devise",
        "device"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Device",
+        "ur": "مشین، آلہ",
+        "ok": true
+       },
+       {
+        "w": "Devise",
+        "ur": "بنانا"
+       }
+      ]
      },
      {
       "q": "She ___ her hair.",
@@ -355,7 +806,18 @@ const UNIT = {
        "died",
        "dyed"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Dye",
+        "ur": "رنگنا",
+        "ok": true
+       },
+       {
+        "w": "Die",
+        "ur": "مرنا، فوت ہونا"
+       }
+      ]
      },
      {
       "q": "Be ___ in every matter.",
@@ -363,7 +825,18 @@ const UNIT = {
        "economic",
        "economical"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Economical",
+        "ur": "کفایت شعارانہ ۔ بچت والا",
+        "ok": true
+       },
+       {
+        "w": "Economic",
+        "ur": "معاشی"
+       }
+      ]
      },
      {
       "q": "He ___ a good place for a camp.",
@@ -371,7 +844,18 @@ const UNIT = {
        "elected",
        "selected"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Select",
+        "ur": "(زیادہ میں سے ) انتخاب کرنا، چُن لینا",
+        "ok": true
+       },
+       {
+        "w": "Elect",
+        "ur": "(ووٹ کے ذریعے) انتخاب کرنا۔ چُن لینا"
+       }
+      ]
      },
      {
       "q": "He was involved in an ___ affair.",
@@ -379,7 +863,18 @@ const UNIT = {
        "illicit",
        "elicit"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Illicit",
+        "ur": "نا جائز",
+        "ok": true
+       },
+       {
+        "w": "Elicit",
+        "ur": "کسی کا ردِ عمل لینا"
+       }
+      ]
      },
      {
       "q": "His death is ___.",
@@ -387,7 +882,18 @@ const UNIT = {
        "eminent",
        "imminent"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Imminent",
+        "ur": "متوقع ، عنقریب",
+        "ok": true
+       },
+       {
+        "w": "Eminent",
+        "ur": "مشہور"
+       }
+      ]
      },
      {
       "q": "She developed an interest in ___.",
@@ -395,7 +901,18 @@ const UNIT = {
        "entomology",
        "etymology"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Etymology",
+        "ur": "الفاظ و معانی کی اصل اور تاریخ کا علم",
+        "ok": true
+       },
+       {
+        "w": "Entomology",
+        "ur": "علم حشریات (کیڑے مکوڑے)"
+       }
+      ]
      },
      {
       "q": "The speech was written ___ for the occasion.",
@@ -403,7 +920,18 @@ const UNIT = {
        "especially",
        "specially"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Specially",
+        "ur": "کسی خاص مقصد کے لیے",
+        "ok": true
+       },
+       {
+        "w": "Especially",
+        "ur": "خصوصاً"
+       }
+      ]
      },
      {
       "q": "The library is open ___.",
@@ -411,7 +939,18 @@ const UNIT = {
        "everyday",
        "every day"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Every day",
+        "ur": "روزانہ، ہر روز",
+        "ok": true
+       },
+       {
+        "w": "Everyday",
+        "ur": "عام، روز مرّہ"
+       }
+      ]
      },
      {
       "q": "They were given ___ instructions.",
@@ -419,7 +958,18 @@ const UNIT = {
        "implicit",
        "explicit"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Explicit",
+        "ur": "واضح",
+        "ok": true
+       },
+       {
+        "w": "Implicit",
+        "ur": "پوشیدہ"
+       }
+      ]
      }
     ],
     [
@@ -429,7 +979,18 @@ const UNIT = {
        "further",
        "farther"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Further",
+        "ur": "مزید",
+        "ok": true
+       },
+       {
+        "w": "Farther",
+        "ur": "زیادہ دور"
+       }
+      ]
      },
      {
       "q": "A bike needs ___ fuel.",
@@ -437,7 +998,18 @@ const UNIT = {
        "fewer",
        "less"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Less",
+        "ur": "مقدار کے لحاظ سے کم",
+        "ok": true
+       },
+       {
+        "w": "Fewer",
+        "ur": "تعداد کے لحاظ سے کم"
+       }
+      ]
      },
      {
       "q": "He was ___ a teacher here.",
@@ -445,7 +1017,18 @@ const UNIT = {
        "formerly",
        "formally"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Formerly",
+        "ur": "سابقہ، پچھلا",
+        "ok": true
+       },
+       {
+        "w": "Formally",
+        "ur": "باقاعدہ طور پر"
+       }
+      ]
      },
      {
       "q": "It’s her ___ birthday.",
@@ -453,7 +1036,18 @@ const UNIT = {
        "fourth",
        "forth"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Fourth",
+        "ur": "چوتھا",
+        "ok": true
+       },
+       {
+        "w": "Forth",
+        "ur": "باہر کو ، آگے"
+       }
+      ]
      },
      {
       "q": "He owned a ___ of cattle.",
@@ -461,7 +1055,18 @@ const UNIT = {
        "herd",
        "heard"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Herd",
+        "ur": "ریوڑ",
+        "ok": true
+       },
+       {
+        "w": "Heard",
+        "ur": "سُنا، سُن لیا"
+       }
+      ]
      },
      {
       "q": "Eat ___ food.",
@@ -469,7 +1074,18 @@ const UNIT = {
        "healthful",
        "healthy"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Healthful",
+        "ur": "صحت بخش",
+        "ok": true
+       },
+       {
+        "w": "Healthy",
+        "ur": "صحت مند"
+       }
+      ]
      },
      {
       "q": "___ is harmful to life.",
@@ -477,7 +1093,18 @@ const UNIT = {
        "Heroin",
        "Heroine"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Heroin",
+        "ur": "ایک نشہ آورچیز",
+        "ok": true
+       },
+       {
+        "w": "Heroine",
+        "ur": "مرکزی خاتون"
+       }
+      ]
      },
      {
       "q": "A ___ of tourists entered the museum.",
@@ -485,7 +1112,18 @@ const UNIT = {
        "hoard",
        "horde"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Horde",
+        "ur": "جمِ غفیر، بڑا گروہ",
+        "ok": true
+       },
+       {
+        "w": "Hoard",
+        "ur": "ذخیرہ ، مجموعہ"
+       }
+      ]
      },
      {
       "q": "This is ___ school.",
@@ -493,7 +1131,18 @@ const UNIT = {
        "our",
        "hour"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Our",
+        "ur": "ہمارا",
+        "ok": true
+       },
+       {
+        "w": "Hour",
+        "ur": "گھنٹہ"
+       }
+      ]
      },
      {
       "q": "He made an ___ to his lameness.",
@@ -501,7 +1150,18 @@ const UNIT = {
        "illusion",
        "allusion"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Allusion",
+        "ur": "حوالہ۔ اشارہ",
+        "ok": true
+       },
+       {
+        "w": "Illusion",
+        "ur": "دھوکہ ، فریب"
+       }
+      ]
      }
     ],
     [
@@ -511,7 +1171,18 @@ const UNIT = {
        "emigrated",
        "immigrated"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Emigrate",
+        "ur": "ہجرت کرنا",
+        "ok": true
+       },
+       {
+        "w": "Immigrate",
+        "ur": "غیر ملک میں جا بسنا"
+       }
+      ]
      },
      {
       "q": "The movie tells an ___ story of survival.",
@@ -519,7 +1190,18 @@ const UNIT = {
        "incredulous",
        "incredible"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Incredible",
+        "ur": "نا قابل یقین",
+        "ok": true
+       },
+       {
+        "w": "Incredulous",
+        "ur": "شکی"
+       }
+      ]
      },
      {
       "q": "Severe illness has ___ the region.",
@@ -527,7 +1209,18 @@ const UNIT = {
        "afflicted",
        "inflicted"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Afflicted",
+        "ur": "کے ساتھ متاثر",
+        "ok": true
+       },
+       {
+        "w": "Inflicted",
+        "ur": "پہنچائی گئی، عائد کی گئی۔"
+       }
+      ]
      },
      {
       "q": "She was ___ at finding ways to work more quickly.",
@@ -535,7 +1228,18 @@ const UNIT = {
        "ingenious",
        "ingenuous"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Ingenious",
+        "ur": "زیرک ، فراست والا",
+        "ok": true
+       },
+       {
+        "w": "Ingenuous",
+        "ur": "سادہ لوح"
+       }
+      ]
      },
      {
       "q": "He is in the ___ care unit.",
@@ -543,7 +1247,18 @@ const UNIT = {
        "intensive",
        "extensive"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Intensive",
+        "ur": "شدید، انتہائی",
+        "ok": true
+       },
+       {
+        "w": "Extensive",
+        "ur": "وسیع"
+       }
+      ]
      },
      {
       "q": "She died ___ year.",
@@ -551,7 +1266,18 @@ const UNIT = {
        "latest",
        "last"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Last",
+        "ur": "گزشتہ",
+        "ok": true
+       },
+       {
+        "w": "Latest",
+        "ur": "تازہ ترین"
+       }
+      ]
      },
      {
       "q": "Thundering follows ___.",
@@ -559,7 +1285,18 @@ const UNIT = {
        "lightening",
        "lightning"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Lightning",
+        "ur": "بجلی",
+        "ok": true
+       },
+       {
+        "w": "Lightening",
+        "ur": "ہلکا کرنا"
+       }
+      ]
      },
      {
       "q": "Tall, ___ plants grew along the river bank.",
@@ -567,7 +1304,18 @@ const UNIT = {
        "luxuriant",
        "luxurious"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Luxuriant",
+        "ur": "سرسبز، گھنا",
+        "ok": true
+       },
+       {
+        "w": "Luxurious",
+        "ur": "عیش و عشرت والے"
+       }
+      ]
      },
      {
       "q": "What is your ___ status?",
@@ -575,7 +1323,18 @@ const UNIT = {
        "martial",
        "marital"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Marital",
+        "ur": "شادی والا، ازدواجی",
+        "ok": true
+       },
+       {
+        "w": "Martial",
+        "ur": "لڑائی والا، جنگی"
+       }
+      ]
      },
      {
       "q": "Do not ___ in my affairs.",
@@ -583,7 +1342,18 @@ const UNIT = {
        "medal",
        "meddle"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Meddle",
+        "ur": "مداخلت کرنا",
+        "ok": true
+       },
+       {
+        "w": "Medal",
+        "ur": "تمغہ"
+       }
+      ]
      }
     ],
     [
@@ -593,7 +1363,18 @@ const UNIT = {
        "moral",
        "morale"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Morale",
+        "ur": "جذبہ و ہمت",
+        "ok": true
+       },
+       {
+        "w": "Moral",
+        "ur": "اخلاقی"
+       }
+      ]
      },
      {
       "q": "He is a retired ___ officer.",
@@ -601,7 +1382,18 @@ const UNIT = {
        "navel",
        "naval"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Naval",
+        "ur": "بحریہ سے متعلق",
+        "ok": true
+       },
+       {
+        "w": "Navel",
+        "ur": "ناف"
+       }
+      ]
      },
      {
       "q": "I don’t ___ it.",
@@ -609,7 +1401,18 @@ const UNIT = {
        "now",
        "know"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Know",
+        "ur": "جاننا",
+        "ok": true
+       },
+       {
+        "w": "Now",
+        "ur": "اب"
+       }
+      ]
      },
      {
       "q": "The soldiers defended the ___ of the camp.",
@@ -617,7 +1420,18 @@ const UNIT = {
        "perimeter",
        "parameter"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Perimeter",
+        "ur": "زمین کی بیرونی حدود",
+        "ok": true
+       },
+       {
+        "w": "Parameter",
+        "ur": "اصول( کی حد) ، ضابطے"
+       }
+      ]
      },
      {
       "q": "The ___ died in the hospital.",
@@ -625,7 +1439,18 @@ const UNIT = {
        "patience",
        "patient"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Patient",
+        "ur": "مریض",
+        "ok": true
+       },
+       {
+        "w": "Patience",
+        "ur": "صبر"
+       }
+      ]
      },
      {
       "q": "Give me a ___ of paper.",
@@ -633,7 +1458,18 @@ const UNIT = {
        "peace",
        "piece"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Piece",
+        "ur": "ٹکڑا",
+        "ok": true
+       },
+       {
+        "w": "Peace",
+        "ur": "امن"
+       }
+      ]
      },
      {
       "q": "I took a ___ at the list.",
@@ -641,7 +1477,18 @@ const UNIT = {
        "peek",
        "peak"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Peek",
+        "ur": "چوری دیکھنا",
+        "ok": true
+       },
+       {
+        "w": "Peak",
+        "ur": "عروج"
+       }
+      ]
      },
      {
       "q": "He is a ___ friend of mine.",
@@ -649,7 +1496,18 @@ const UNIT = {
        "personal",
        "personnel"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Personal",
+        "ur": "ذاتی",
+        "ok": true
+       },
+       {
+        "w": "Personnel",
+        "ur": "عملہ"
+       }
+      ]
      },
      {
       "q": "___ water into the glass.",
@@ -657,7 +1515,18 @@ const UNIT = {
        "Pour",
        "Pore"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Pour",
+        "ur": "انڈیلنا",
+        "ok": true
+       },
+       {
+        "w": "Pore",
+        "ur": "مسام"
+       }
+      ]
      },
      {
       "q": "He lost his ___ notebook.",
@@ -665,7 +1534,18 @@ const UNIT = {
        "practicable",
        "practical"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Practical",
+        "ur": "عملی",
+        "ok": true
+       },
+       {
+        "w": "Practicable",
+        "ur": "قابل عمل"
+       }
+      ]
      }
     ],
     [
@@ -675,7 +1555,18 @@ const UNIT = {
        "principle",
        "principal"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Principle",
+        "ur": "اصول",
+        "ok": true
+       },
+       {
+        "w": "Principal",
+        "ur": "اہم ۔ادارےکا سربراہ"
+       }
+      ]
      },
      {
       "q": "He fell a ___ to bad company.",
@@ -683,7 +1574,18 @@ const UNIT = {
        "pray",
        "prey"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Prey",
+        "ur": "شکار",
+        "ok": true
+       },
+       {
+        "w": "Pray",
+        "ur": "دعا کرنا"
+       }
+      ]
      },
      {
       "q": "The movie will have its ___ next week.",
@@ -691,7 +1593,18 @@ const UNIT = {
        "premiere",
        "premier"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Premiere",
+        "ur": "پہلا عوامی شو",
+        "ok": true
+       },
+       {
+        "w": "Premier",
+        "ur": "بہت اہم"
+       }
+      ]
      },
      {
       "q": "One ___ two.",
@@ -699,7 +1612,18 @@ const UNIT = {
        "proceeds",
        "precedes"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Precede",
+        "ur": "پہلے آنا",
+        "ok": true
+       },
+       {
+        "w": "Proceed",
+        "ur": "کاروائی آگے بڑھانا"
+       }
+      ]
      },
      {
       "q": "Be ___, please.",
@@ -707,7 +1631,18 @@ const UNIT = {
        "quiet",
        "quit"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Quiet",
+        "ur": "خاموش",
+        "ok": true
+       },
+       {
+        "w": "Quit",
+        "ur": "چھوڑنا"
+       }
+      ]
      },
      {
       "q": "She pulled the ___ to stop the horse.",
@@ -715,7 +1650,18 @@ const UNIT = {
        "reigns",
        "reins"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Rein",
+        "ur": "لگام",
+        "ok": true
+       },
+       {
+        "w": "Reign",
+        "ur": "دورِ حکومت"
+       }
+      ]
      },
      {
       "q": "___ it legibly.",
@@ -723,7 +1669,18 @@ const UNIT = {
        "Write",
        "Right"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Write",
+        "ur": "لکھنا",
+        "ok": true
+       },
+       {
+        "w": "Right",
+        "ur": "درست ، ٹھیک"
+       }
+      ]
      },
      {
       "q": "What is your ___ in this game?",
@@ -731,7 +1688,18 @@ const UNIT = {
        "roll",
        "role"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Role",
+        "ur": "کردار",
+        "ok": true
+       },
+       {
+        "w": "Roll",
+        "ur": "لڑھکنا"
+       }
+      ]
      },
      {
       "q": "Out of ___, out of mind.",
@@ -739,7 +1707,18 @@ const UNIT = {
        "site",
        "sight"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Sight",
+        "ur": "نظر",
+        "ok": true
+       },
+       {
+        "w": "Site",
+        "ur": "جگہ"
+       }
+      ]
      },
      {
       "q": "They sell ___.",
@@ -747,7 +1726,18 @@ const UNIT = {
        "stationery",
        "stationary"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Stationery",
+        "ur": "سٹیشنری",
+        "ok": true
+       },
+       {
+        "w": "Stationary",
+        "ur": "ساکن"
+       }
+      ]
      }
     ],
     [
@@ -757,7 +1747,18 @@ const UNIT = {
        "than",
        "then"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Than",
+        "ur": "نسبتاً، کی نسبت",
+        "ok": true
+       },
+       {
+        "w": "Then",
+        "ur": "تب، پھر"
+       }
+      ]
      },
      {
       "q": "Which is ___ house?",
@@ -765,7 +1766,18 @@ const UNIT = {
        "there",
        "their"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Their",
+        "ur": "اُن کا",
+        "ok": true
+       },
+       {
+        "w": "There",
+        "ur": "وہاں، اس جگہ"
+       }
+      ]
      },
      {
       "q": "He is ___ weak to walk.",
@@ -773,7 +1785,18 @@ const UNIT = {
        "too",
        "to"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Too",
+        "ur": "کچھ زیادہ ہی",
+        "ok": true
+       },
+       {
+        "w": "To",
+        "ur": "کی طرف"
+       }
+      ]
      },
      {
       "q": "The coat is belted at the ___.",
@@ -781,7 +1804,18 @@ const UNIT = {
        "waste",
        "waist"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Waist",
+        "ur": "کمر",
+        "ok": true
+       },
+       {
+        "w": "Waste",
+        "ur": "ضائع کرنا"
+       }
+      ]
      },
      {
       "q": "I ___ how he died at this age.",
@@ -789,7 +1823,18 @@ const UNIT = {
        "wander",
        "wonder"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Wonder",
+        "ur": "سوچنا",
+        "ok": true
+       },
+       {
+        "w": "Wander",
+        "ur": "گھومنا پھرنا"
+       }
+      ]
      },
      {
       "q": "The ___ is fine today.",
@@ -797,7 +1842,18 @@ const UNIT = {
        "whether",
        "weather"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Weather",
+        "ur": "موسم",
+        "ok": true
+       },
+       {
+        "w": "Whether",
+        "ur": "آیا کہ، خواہ"
+       }
+      ]
      },
      {
       "q": "Put the ___ on the fire.",
@@ -805,7 +1861,18 @@ const UNIT = {
        "cattle",
        "kettle"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Kettle",
+        "ur": "کیتلی",
+        "ok": true
+       },
+       {
+        "w": "Cattle",
+        "ur": "مویشی"
+       }
+      ]
      },
      {
       "q": "They ___ fruit.",
@@ -813,7 +1880,18 @@ const UNIT = {
        "cell",
        "sell"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Sell",
+        "ur": "بیچنا",
+        "ok": true
+       },
+       {
+        "w": "Cell",
+        "ur": "خانہ، کوٹھڑی"
+       }
+      ]
      },
      {
       "q": "He ___ a verse from Iqbal’s poetry.",
@@ -821,7 +1899,18 @@ const UNIT = {
        "cited",
        "sited"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Cite",
+        "ur": "حوالہ دینا",
+        "ok": true
+       },
+       {
+        "w": "Site",
+        "ur": "جگہ"
+       }
+      ]
      },
      {
       "q": "I saw a ___ in the zoo.",
@@ -829,7 +1918,18 @@ const UNIT = {
        "deer",
        "dear"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Deer",
+        "ur": "ہرن",
+        "ok": true
+       },
+       {
+        "w": "Dear",
+        "ur": "عزیز، پیارا"
+       }
+      ]
      }
     ],
     [
@@ -839,7 +1939,18 @@ const UNIT = {
        "council",
        "counsel"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Counsel",
+        "ur": "مشورہ نصیحت",
+        "ok": true
+       },
+       {
+        "w": "Council",
+        "ur": "کونسل(جماعت یا کمیٹی)"
+       }
+      ]
      },
      {
       "q": "He lost his ___.",
@@ -847,7 +1958,18 @@ const UNIT = {
        "dairy",
        "diary"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Diary",
+        "ur": "ڈائری، بیاض روز نامچہ",
+        "ok": true
+       },
+       {
+        "w": "Dairy",
+        "ur": "شِیر خانہ، ڈیری فارم"
+       }
+      ]
      },
      {
       "q": "This is ___ for one thousand rupees.",
@@ -855,7 +1977,18 @@ const UNIT = {
        "cheque",
        "check"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Cheque",
+        "ur": "روپوں کا چیک",
+        "ok": true
+       },
+       {
+        "w": "Check",
+        "ur": "چیک کرنا"
+       }
+      ]
      },
      {
       "q": "The ___ was painted white.",
@@ -863,7 +1996,18 @@ const UNIT = {
        "sealing",
        "ceiling"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Ceiling",
+        "ur": "اندرونی چھت",
+        "ok": true
+       },
+       {
+        "w": "Sealing",
+        "ur": "سر بمہر کرنا، بند کرنا"
+       }
+      ]
      },
      {
       "q": "He booked a ___ in the train.",
@@ -871,7 +2015,18 @@ const UNIT = {
        "birth",
        "berth"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Berth",
+        "ur": "لیٹنے والی سیٹ",
+        "ok": true
+       },
+       {
+        "w": "Birth",
+        "ur": "پیدائش"
+       }
+      ]
      },
      {
       "q": "We ___ our dead.",
@@ -879,7 +2034,18 @@ const UNIT = {
        "bury",
        "berry"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Bury",
+        "ur": "دفن کرنا",
+        "ok": true
+       },
+       {
+        "w": "Berry",
+        "ur": "بیر نما پھل"
+       }
+      ]
      },
      {
       "q": "Aslam led a horse by the ___.",
@@ -887,7 +2053,18 @@ const UNIT = {
        "bridal",
        "bridle"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Bridle",
+        "ur": "(گھوڑے کی)لگام",
+        "ok": true
+       },
+       {
+        "w": "Bridal",
+        "ur": "دُلہن سے متعلق ، عروُسی"
+       }
+      ]
      },
      {
       "q": "The police ___ the shipment.",
@@ -895,7 +2072,18 @@ const UNIT = {
        "ceased",
        "seized"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Seize",
+        "ur": "ضبط کرنا",
+        "ok": true
+       },
+       {
+        "w": "Cease",
+        "ur": "بند ہونا"
+       }
+      ]
      },
      {
       "q": "She told me a ___ of two cities.",
@@ -903,7 +2091,18 @@ const UNIT = {
        "tale",
        "tail"
       ],
-      "answer": 0
+      "answer": 0,
+      "m": [
+       {
+        "w": "Tale",
+        "ur": "کہانی",
+        "ok": true
+       },
+       {
+        "w": "Tail",
+        "ur": "دُم"
+       }
+      ]
      },
      {
       "q": "I do not eat ___ of an egg.",
@@ -911,7 +2110,18 @@ const UNIT = {
        "yoke",
        "yolk"
       ],
-      "answer": 1
+      "answer": 1,
+      "m": [
+       {
+        "w": "Yolk",
+        "ur": "انڈے کی زردی",
+        "ok": true
+       },
+       {
+        "w": "Yoke",
+        "ur": "جوڑنا"
+       }
+      ]
      }
     ]
    ],
